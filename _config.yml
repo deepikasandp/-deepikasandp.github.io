@@ -1,3 +1,7 @@
+title: "Deepika's Portfolio"
+email: 'deepikasandp@gmail.com'
+description: 'A collection of my projects and work.'
 theme: minima
-title: My Portfolio
-description: Welcome to my developer portfolio!
+url: 'https://deepikasandp.github.io'
+baseurl: ''
+custom_css: assets/css/custom.css

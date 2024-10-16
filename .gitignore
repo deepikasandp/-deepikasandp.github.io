@@ -1,0 +1,7 @@
+# Ignore Jekyll generated files
+_site/
+.jekyll-metadata
+
+# Ignore Gemfile and Gemfile.lock (if not needed)
+Gemfile
+Gemfile.lock

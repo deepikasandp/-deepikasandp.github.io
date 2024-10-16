@@ -1,0 +1,30 @@
+/* Change the background color */
+body {
+  background-color: red;
+}
+
+/* Change the font of the headers */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Customize links */
+a {
+  color: #007acc;
+}
+
+/* Sticky navigation */
+.site-nav {
+  position: sticky;
+  top: 0;
+  background-color: red;
+  z-index: 1000;
+  color: white;
+}
+
+.site-footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
