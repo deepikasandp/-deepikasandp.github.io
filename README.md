@@ -6,7 +6,7 @@ Welcome to my portfolio! This application showcases my projects and skills as a 
 
 This portfolio is deployed using **GitHub Pages**, a service that allows you to host static websites directly from your GitHub repository. It leverages the **Minima** theme, providing a simple and elegant layout for showcasing my work and experiences.
 
-You can view the deployed application at the following link: [Deepika's Portfolio](https://deepikasandp.github.io/).
+You can view the deployed application at the following link: [Projects](https://deepikasandp.github.io/).
 
 ## Features
 

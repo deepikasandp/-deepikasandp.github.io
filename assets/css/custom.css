@@ -1,10 +1,4 @@
 /* Change the background color */
-body {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 0;
-}
-
 * {
   font-family: 'Open Sans', sans-serif;
   color: #212121;
@@ -22,14 +16,6 @@ a {
 a:hover, a:active, a:focus {
   color: #0e4b45;
   font-weight: 350;
-}
-
-b {
-  font-weight: bolder;
-}
-
-li > b {
-  font-weight: bold;
 }
 
 ul {
@@ -53,20 +39,24 @@ ul li:before {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #f8f9fa;
+  background-color: #e8f9f6;
+  .site-title {
+    color: #1faa9b;
+  }
 }
 
 /* Project Section */
 .projects {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 2rem;
   padding: 1rem;
 }
 
+/* Default layout for larger screens */
 .projects-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 1rem;
 }
 
 .image-container {
@@ -75,16 +65,30 @@ ul li:before {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+}
+
+/* For small screens (mobile/tablet) */
+@media (max-width: 768px) {
+  .projects-row {
+    grid-template-columns: auto;
+  }
+  .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  .project-information {
+    margin-top: 1rem;
+  }
 }
 
 .bg-beauty-connect {
-  background-color: #f0f0f0;
+  background-color: #d2f8ce;
 }
 
 .bg-aws-microservice {
-  background-color: #e0f7fa;
+  background-color: #f4efa9;
 }
 
 .bg-dynamic-form {
@@ -93,15 +97,14 @@ ul li:before {
 
 .projects-row__img {
   display: block;
-  max-width: 100%;
   width: 100%;
   height: auto;
-  padding: 1.25rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
 .project-information {
-  padding: 1.25rem;
+  width: 100%;
 }
 
 .project-information__title {
@@ -113,20 +116,8 @@ ul li:before {
 .project-information__heading {
   font-size: 1rem;
   font-weight: lighter;
-  line-height: 1.5rem;
-  margin-top: 0;
   font-style: italic;
   color: #808080;
-}
-
-.project-information__section-text {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.project-information__description {
-  margin: 0.5rem 0 1rem;
-  color: black;
 }
 
 .project-information__btn {
@@ -135,12 +126,10 @@ ul li:before {
   border-radius: 0.5rem;
   background-color: white;
   border: 1px solid #0e4b45;
-  font-size: 1rem;
-  font-family: 'Helvetica', sans-serif;
 }
 
 .site-footer {
-  background-color: #f8f9fa;
+  background-color: #e8f9f6;
   padding: 20px;
   text-align: center;
 }
@@ -171,10 +160,4 @@ ul li:before {
 
 .social-media-list li a:hover {
   color: #1faa9b; /* Change color on hover */
-}
-
-@media (min-width: 992px) {
-  .col-md-6 {
-    width: 50%;
-  }
 }
