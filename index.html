@@ -16,9 +16,7 @@ title: Deepika Panneerselvam
 <p>As I continue my journey in web development, I am excited to leverage my skills and collaborate with innovative teams to deliver exceptional digital solutions.</p>
 
 <div class="projects">
-
   <div class="projects-row">
-
     <div id="aws-microservice">
       <div class="image-container bg-aws-microservice">
         <img class="projects-row__img" src="images/aws_microservice.jpg" alt="AWS Microservice">
@@ -26,27 +24,30 @@ title: Deepika Panneerselvam
     </div>
     <div>
       <div class="project-information">
-        <h2 class="project-information__title">Image Upload and Download Application</h2>
+        <h2 class="project-information__title">Serverless Image Upload & View Application</h2>
         <h3 class="project-information__heading">October 2024 - Present<br></h3>
         <h4 class="project-information__section-text"><b>Technologies used</b>: React Js, Typescript, Node.js, AWS Lambda, SQS, AWS SQL Database</h4>
         <p class="project-information__description">
-          A microservice based Node.js app using AWS Lambda and SQS for processing image uploads and downloads. Some notable achievements:
+          A microservice based node app involves a frontend React app, a Node.js service, AWS Lambda, SQS, and S3 to handle image uploads and views. Some notable achievements:
         </p>
         <ul>
           <li>Efficient processing of image uploads</li>
           <li>Integrated with AWS services for scalability</li>
           <li>Used pre-signed URLs to upload files directly to AWS S3 from front end. The  Express server won’t need to handle file uploads. Instead, it focuses simply on generating pre-signed URLs for your frontend to use...</li>
         </ul>
+        <button id="repoButton" type="button" class="project-information__btn" onclick="openModal()">
+          Repo
+        </button>
         <button type="button" class="project-information__btn">
-          <a target="_blank" href="https://github.com/deepikasandp/ImageUpload">Repo</a>
+          <a target="_blank" href="images/aws-image-uploader.jpg">Architecture  Diagram</a>
+        </button>
+        <button type="button" class="project-information__btn">
+          <a target="_blank" href="{{ '/assets/readmes/siuv-readme.html' | relative_url }}">Read Me</a>
         </button>
       </div>
     </div>
-
   </div>
-
   <div class="projects-row">
-
     <div id="beauty-connect" class="col-md-6">
       <div class="image-container bg-beauty-connect">
         <img class="projects-row__img" src="images/beauty_connect.jpg" alt="Beauty Connect">
@@ -70,11 +71,8 @@ title: Deepika Panneerselvam
         </button>
       </div>
     </div>
-
   </div>
-
   <div class="projects-row">
-
     <div id="dynamic-form" class="col-md-6">
       <div class="image-container bg-dynamic-form">
         <img class="projects-row__img" src="images/dynamic_form.jpg" alt="Dynamic Form Renderer">
@@ -84,21 +82,28 @@ title: Deepika Panneerselvam
       <div class="project-information">
         <h2 class="project-information__title">Dynamic Form Renderer</h2>
         <h3 class="project-information__heading">October 1, 2024, 3 hour work<br></h3>
-        <h4 class="project-information__section-text"><b>Technologies used</b>: React, Material-UI</h4>
+        <h4 class="project-information__section-text"><b>Technologies used</b>: React, Material-UI, TypeScript, Jest, React Testing Library, Storybook</h4>
         <p class="project-information__description">
           A React app that renders dynamic forms based on configurations. Some notable achievements:
         </p>
         <ul>
-          <li>Dynamic rendering based on user input</li>
-          <li>Responsive and user-friendly interface</li>
+          <li>Static form generation with predefined fields.</li>
+          <li>Dynamic form generation using a configurable JSON structure.</li>
+          <li>Support for various field types: text input, integer input, dropdown selectors, and currency input.</li>
+          <li>Dynamic business logic: adding/removing fields, reordering fields, changing default values, and renaming fields.</li>
+          <li>Unit testing with Jest and React Testing Library.</li>
+          <li>Interactive component documentation with Storybook and accessibility checks using the a11y addon.</li>
         </ul>
         <button type="button" class="project-information__btn">
           <a target="_blank" href="https://github.com/deepikasandp/DynamicForm">Repo</a>
         </button>
       </div>
     </div>
-
   </div>
-
 </div>
+<!-- Include modal -->
+{% include modal.html %}
+
+<!-- Include modal JS -->
+<script src="assets/js/modal.js"></script>
 
